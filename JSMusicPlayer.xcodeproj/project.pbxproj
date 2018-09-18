@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D6536578215184F20026CF5D /* JSMusicPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D6536576215184F20026CF5D /* JSMusicPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D653659D215189460026CF5D /* JSMusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653659C215189460026CF5D /* JSMusicPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D6536573215184F20026CF5D /* JSMusicPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSMusicPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6536576215184F20026CF5D /* JSMusicPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSMusicPlayer.h; sourceTree = "<group>"; };
 		D6536577215184F20026CF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D653659C215189460026CF5D /* JSMusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSMusicPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		D6536575215184F20026CF5D /* JSMusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				D653659C215189460026CF5D /* JSMusicPlayerViewController.swift */,
 				D6536576215184F20026CF5D /* JSMusicPlayer.h */,
 				D6536577215184F20026CF5D /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					D6536572215184F20026CF5D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D653659D215189460026CF5D /* JSMusicPlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		D653657C215184F20026CF5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = rs.geoinformatika.JSMusicPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		D653657D215184F20026CF5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
